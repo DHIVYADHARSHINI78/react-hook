@@ -88,7 +88,7 @@ function EditPatient() {
         {success && <SuccessBox>✅ Updated successfully! Redirecting...</SuccessBox>}
         {error   && <ErrorBox>⚠️ {error}</ErrorBox>}
 
-        {/* React Bootstrap Form (20%) */}
+       
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3">
             <Form.Label style={{ fontWeight: 700 }}>Full Name</Form.Label>

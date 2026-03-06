@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Form, Button as BsBtn } from 'react-bootstrap';
 import { useAppContext } from '../context/AppContext';
 
-// ---------- Styled Components (80%) ----------
+
 const Page = styled.div`
   min-height: 100vh;
   background: linear-gradient(135deg, #fdf4ff 0%, #f0f4ff 100%);
@@ -125,7 +125,7 @@ function Login() {
 
         {error && <ErrorBox>⚠️ {error}</ErrorBox>}
 
-        {/* React Bootstrap Form (20%) */}
+      
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3">
             <Form.Label style={{ fontWeight: 700 }}>Email</Form.Label>

@@ -79,7 +79,6 @@ function AddPrescription() {
         {success && <SuccessBox>✅ Prescription added! Redirecting...</SuccessBox>}
         {error   && <ErrorBox>⚠️ {error}</ErrorBox>}
 
-        {/* React Bootstrap Form (20%) */}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3">
             <Form.Label style={{ fontWeight: 700 }}>Medicine Name</Form.Label>

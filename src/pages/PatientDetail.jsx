@@ -156,7 +156,7 @@ function PatientDetail() {
           </div>
         </ProfileLeft>
         <ProfileRight>
-          {/* ✅ $variant — no DOM warning */}
+         
           <ActionBtn onClick={() => navigate(`/edit-patient/${patient.id}`)}>✏️ Edit</ActionBtn>
           <ActionBtn $variant="green"  onClick={() => navigate(`/add-vaccine/${patient.id}`)}>+ Vaccine</ActionBtn>
           <ActionBtn $variant="green"  onClick={() => navigate(`/add-prescription/${patient.id}`)}>+ Prescription</ActionBtn>
