@@ -1,8 +1,4 @@
-// ============================================================
-// Login.js
-// Hooks: useState (form fields + error), useNavigate, useContext
-// UI: styled-components (80%) + React Bootstrap Form (20%)
-// ============================================================
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';

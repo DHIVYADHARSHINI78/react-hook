@@ -1,7 +1,4 @@
-// ============================================================
-// App.js  →  Routes + Context wrapper
-// All routes except /login are protected
-// ============================================================
+
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';

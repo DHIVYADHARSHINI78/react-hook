@@ -1,8 +1,4 @@
-// ============================================================
-// AppContext.js
-// Provides: auth (doctor login/logout) + all patient CRUD
-// ✅ localStorage: patients data persists across page refresh
-// ============================================================
+
 import React, { createContext, useContext, useState, useEffect } from 'react'; // ✅ added useEffect
 
 const AppContext = createContext();

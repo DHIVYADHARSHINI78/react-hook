@@ -1,8 +1,4 @@
-// ============================================================
-// AddPatient.js
-// Hooks: useState (form), useRef (focus), useNavigate, useContext
-// UI: styled-components (80%) + React Bootstrap Form (20%)
-// ============================================================
+
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';

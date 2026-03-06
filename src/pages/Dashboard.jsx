@@ -1,8 +1,4 @@
-// ============================================================
-// Dashboard.js
-// Hooks: useContext, useEffect (loading), useMemo (stats)
-// UI: styled-components (80%) + Ant Design Statistic + Alert (20%)
-// ============================================================
+
 import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
@@ -66,12 +62,15 @@ const Row = styled.div`
   cursor: pointer;
   &:hover { background: #faf7ff; border-radius: 8px; padding: 10px 8px; }
 `;
+
+// styled definition — p => p.$g
 const Pill = styled.span`
   padding: 3px 12px; border-radius: 12px;
   font-size: 0.78rem; font-weight: 700;
-  background: ${p => p.g === 'Male' ? '#dbeafe' : '#fce7f3'};
-  color:      ${p => p.g === 'Male' ? '#1e40af' : '#9d174d'};
+  background: ${p => p.$g === 'Male' ? '#dbeafe' : '#fce7f3'};
+  color:      ${p => p.$g === 'Male' ? '#1e40af' : '#9d174d'};
 `;
+
 
 function Dashboard() {
   const { patients }  = useAppContext();   // useContext
@@ -108,12 +107,12 @@ function Dashboard() {
       </Welcome>
 
       {stats.patients === 0 && (
-        /* Ant Design Alert (20%) */
-        <Alert message="No patients yet. Add your first patient!" type="info" showIcon style={{ marginBottom: 24, borderRadius: 10 }} />
+        /* Ant Design Alert  */
+        <Alert message="No patients yet. Add patient!" type="info" showIcon style={{ marginBottom: 24, borderRadius: 10 }} />
       )}
 
       <StatsRow>
-        {/* Ant Design Statistic (20%) */}
+        {/* Ant Design Statistic  */}
         <StatBox color="#7c3aed">
           <Statistic title="Total Patients"      value={stats.patients}      />
         </StatBox>
@@ -139,7 +138,7 @@ function Dashboard() {
               <span style={{ color: '#888', fontSize: '0.82rem' }}>
                 💉 {p.vaccines.length}  📋 {p.prescriptions.length}
               </span>
-              <Pill g={p.gender}>{p.gender}</Pill>
+           <Pill $g={p.gender}>{p.gender}</Pill>
             </div>
           </Row>
         ))}

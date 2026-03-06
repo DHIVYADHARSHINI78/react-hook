@@ -1,8 +1,4 @@
-// ============================================================
-// AddVaccine.js
-// Hooks: useParams, useContext, useState, useRef, useNavigate
-// UI: styled-components (80%) + React Bootstrap Form (20%)
-// ============================================================
+
 import React, { useState, useRef, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
@@ -84,7 +80,7 @@ function AddVaccine() {
         {success && <SuccessBox>✅ Vaccine added! Redirecting...</SuccessBox>}
         {error   && <ErrorBox>⚠️ {error}</ErrorBox>}
 
-        {/* React Bootstrap Form (20%) */}
+      
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3">
             <Form.Label style={{ fontWeight: 700 }}>Vaccine Name</Form.Label>

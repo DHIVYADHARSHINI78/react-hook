@@ -1,8 +1,4 @@
-// ============================================================
-// EditPatient.js
-// Hooks: useParams, useContext, useState, useNavigate, useMemo
-// UI: styled-components (80%) + React Bootstrap Form (20%)
-// ============================================================
+
 import React, { useState, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';

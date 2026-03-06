@@ -1,8 +1,3 @@
-// ============================================================
-// AddPrescription.js
-// Hooks: useParams, useContext, useState, useRef, useNavigate
-// UI: styled-components (80%) + React Bootstrap Form (20%)
-// ============================================================
 import React, { useState, useRef, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
